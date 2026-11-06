@@ -7,7 +7,7 @@ const langBtn = document.getElementById("langBtn");
 function setLang(lang) {
   root.dataset.lang = lang;
   root.lang = lang === "zh" ? "zh-Hans" : "en";
-  langBtn.textContent = lang === "zh" ? "English" : "中文";
+  langBtn.innerHTML = lang === "zh" ? '<span class="lb-long">English</span><span class="lb-short">EN</span>' : "中文";
   try { localStorage.setItem("lang", lang); } catch (e) { /* storage blocked: fine */ }
 }
 
