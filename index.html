@@ -14,7 +14,13 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="AC &amp; Appliances Co. | 法拉盛空调热泵销售与安装">
   <meta property="og:description" content="Mini-splits, heat pumps and appliances, sold and installed. Flushing showroom, serving all five boroughs and Long Island. 中英双语服务。">
-  <!-- After the site is live, add: <meta property="og:image" content="https://YOUR-SITE/images/hero.jpg"> -->
+  <meta property="og:url" content="https://acappliances.github.io/AC-Appliances-Co/">
+  <meta property="og:image" content="https://acappliances.github.io/AC-Appliances-Co/images/share-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AC &amp; Appliances Co. · 冷暖空调及家电销售与安装">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://acappliances.github.io/AC-Appliances-Co/">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,7 +45,7 @@
     "availableLanguage": ["English","Chinese"]
   }
   </script>
-  <!-- Apply the saved theme before the page draws (prevents a flash). Dark is the default. -->
+  <!-- Apply the saved theme before the page draws -->
   <script>
     try { if (localStorage.getItem("theme") === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}
   </script>
@@ -52,7 +58,6 @@
     <a class="logo" href="#top" aria-label="Home">
       <span class="logo-mark"><img src="images/logo.png" alt="" width="101" height="97"></span>
       <span class="logo-text">
-        <!-- COMPANY NAME -->
         <strong>AC &amp; Appliances Co.</strong>
         <small><span lang="en">Flushing, Queens</span><span lang="zh">法拉盛 · 皇后区</span></small>
       </span>
@@ -88,7 +93,6 @@
 <main>
 
 <!-- =========================== HERO =========================== -->
-<!-- Put a wide photo at images/hero.jpg (a finished install or your showroom). Until then a color background shows. -->
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="container hero-grid">
@@ -192,7 +196,6 @@
 </section>
 
 <!-- =========================== PRODUCTS =========================== -->
-<!-- Each card shows a photo from images/products/ when you add it; otherwise an illustration shows. -->
 <section class="section section-tint" id="products">
   <div class="container">
     <div class="section-head">
@@ -261,7 +264,6 @@
       </article>
     </div>
 
-    <!-- BRANDS: delete any <li> for a brand you don't carry -->
     <div class="brands-block" id="brands">
       <div class="brands-head">
         <h3><span lang="en">Brands we carry</span><span lang="zh">我们销售的品牌</span></h3>
@@ -285,10 +287,6 @@
 </section>
 
 <!-- =========================== MITSUBISHI ELECTRIC TECHNOLOGY =========================== -->
-<!-- These are the same Mitsubishi Electric videos as on nyaccenter.com.
-     Each <video> tries the copy in videos/ first, then falls back to the current site's server.
-     To host them yourself (recommended, in case the old site goes away): download WALL1.MP4, WALL4.MP4 and WALL5.MP4
-     from the links below and save them in a "videos" folder as me-1.mp4, me-2.mp4 and me-3.mp4. -->
 <section class="section section-feature" id="technology">
   <div class="container">
     <div class="section-head">
@@ -301,7 +299,6 @@
     <div class="tech-grid">
       <figure class="tech-card">
         <video autoplay muted loop playsinline preload="metadata" aria-label="Mitsubishi Electric multi-zone application">
-          <source src="videos/me-1.mp4" type="video/mp4">
           <source src="https://cdn.nmg-platform.com/nyaccenter/images/videos/WALL1.MP4" type="video/mp4">
         </video>
         <figcaption>
@@ -311,7 +308,6 @@
       </figure>
       <figure class="tech-card">
         <video autoplay muted loop playsinline preload="metadata" aria-label="Mitsubishi Electric single or multi-zone application">
-          <source src="videos/me-2.mp4" type="video/mp4">
           <source src="https://cdn.nmg-platform.com/nyaccenter/images/videos/WALL4.MP4" type="video/mp4">
         </video>
         <figcaption>
@@ -321,7 +317,6 @@
       </figure>
       <figure class="tech-card">
         <video autoplay muted loop playsinline preload="metadata" aria-label="Mitsubishi Electric single or multi-zone application for open spaces">
-          <source src="videos/me-3.mp4" type="video/mp4">
           <source src="https://cdn.nmg-platform.com/nyaccenter/images/videos/WALL5.MP4" type="video/mp4">
         </video>
         <figcaption>
@@ -353,7 +348,6 @@
 </section>
 
 <!-- =========================== REBATES =========================== -->
-<!-- Program details change often. Check the official pages before promising a customer a specific amount. -->
 <section class="section section-tint" id="rebates">
   <div class="container">
     <div class="section-head">
@@ -438,7 +432,6 @@
 </section>
 
 <!-- =========================== AREAS =========================== -->
-<!-- Edit this list to match where your crews actually go. -->
 <section class="section section-tint" id="areas">
   <div class="container areas-grid">
     <div>
@@ -458,26 +451,49 @@
   </div>
 </section>
 
-<!-- =========================== QUOTE (Google Form placeholder) =========================== -->
+<!-- =========================== QUOTE =========================== -->
 <section class="section" id="quote">
   <div class="container quote-grid">
     <div>
       <p class="eyebrow dark"><span lang="en">Free quote</span><span lang="zh">免费报价</span></p>
       <h2><span lang="en">Tell us about your space</span><span lang="zh">告诉我们您的需求</span></h2>
-      <p lang="en">Fill out the short form and we'll call you back with a price. Prefer to talk? Call us anytime during business hours.</p>
-      <p lang="zh">填写简短表格，我们会尽快联系您报价。也可以直接来电咨询。</p>
+      <p lang="en">Fill out our short form and we'll contact you with a free quote. Prefer to talk? Call us any day, 8 AM to 6 PM.</p>
+      <p lang="zh">填写简短表格，我们会尽快与您联系并免费报价。也可以每天上午 8 点至下午 6 点直接来电咨询。</p>
       <a class="phone-big" href="tel:+17188864980">(718) 886-4980</a>
     </div>
 
-    <!-- GOOGLE FORM PLACEHOLDER
-         When the form is ready: in Google Forms click Send → < > (embed), copy the whole <iframe ...></iframe>,
-         and paste it in place of the <div class="form-placeholder"> block below. -->
-    <div class="form-placeholder">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v18H7zM10 7h4M10 11h4M10 15h2" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
-      <p class="fp-title"><span lang="en">Online quote form coming soon</span><span lang="zh">在线报价表格即将上线</span></p>
-      <p lang="en">For now, call us for a free estimate.</p>
-      <p lang="zh">目前请来电获取免费估价。</p>
-      <a class="btn btn-accent" href="tel:+17188864980"><span lang="en">Call (718) 886-4980</span><span lang="zh">致电 (718) 886-4980</span></a>
+    <div class="quote-card">
+      <img class="quote-card-banner" src="images/quote-banner.jpg" alt="AC &amp; Appliances Co. 免费报价 Free Quote" width="1200" height="300">
+      <div class="quote-card-body">
+        <ol class="quote-steps">
+          <li>
+            <b>1</b>
+            <div>
+              <strong><span lang="en">Tell us what you need</span><span lang="zh">告诉我们您的需求</span></strong>
+              <small><span lang="en">A short form, about 2 minutes, in Chinese and English</span><span lang="zh">简短表格，约 2 分钟，中英文皆可</span></small>
+            </div>
+          </li>
+          <li>
+            <b>2</b>
+            <div>
+              <strong><span lang="en">We contact you</span><span lang="zh">我们与您联系</span></strong>
+              <small><span lang="en">By phone, text, WeChat or email, whichever you prefer</span><span lang="zh">电话、短信、微信或电子邮件，由您选择</span></small>
+            </div>
+          </li>
+          <li>
+            <b>3</b>
+            <div>
+              <strong><span lang="en">Get your free quote</span><span lang="zh">获取免费报价</span></strong>
+              <small><span lang="en">No cost and no obligation</span><span lang="zh">免费，无任何义务</span></small>
+            </div>
+          </li>
+        </ol>
+        <a class="btn btn-accent btn-lg quote-card-btn" id="quoteFormLink" href="tel:+17188864980">
+          <span lang="en">Start the quote form</span><span lang="zh">开始填写报价表</span>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <p class="quote-card-note" id="quoteFormNote"><span lang="en">Opens in a new tab</span><span lang="zh">将在新页面打开</span></p>
+      </div>
     </div>
   </div>
 </section>
@@ -494,7 +510,6 @@
         <dt><span lang="en">Phone</span><span lang="zh">电话</span></dt>
         <dd><a href="tel:+17188864980">(718) 886-4980</a></dd>
         <dt><span lang="en">Hours</span><span lang="zh">营业时间</span></dt>
-        <!-- HOURS -->
         <dd><span lang="en">Open 7 days, Monday – Sunday<br>8:00 AM – 6:00 PM</span><span lang="zh">每天营业（周一至周日）<br>上午 8:00 – 下午 6:00</span></dd>
       </dl>
       <div class="contact-btns">

@@ -1,4 +1,4 @@
-// NY AC & Appliances Center — page behavior
+// AC & Appliances Co. — page behavior
 
 // ---------- Language toggle (English / 中文) ----------
 const root = document.documentElement;
@@ -47,7 +47,6 @@ document.querySelectorAll(".main-nav a").forEach(a =>
 );
 
 // ---------- Photos: load if the file exists, otherwise keep the placeholder ----------
-// Product cards keep their illustration; gallery tiles show which file name to add.
 document.querySelectorAll("[data-photo]").forEach(slot => {
   const src = slot.dataset.photo;
   const img = new Image();
@@ -63,8 +62,21 @@ document.querySelectorAll("[data-photo]").forEach(slot => {
   img.src = src;
 });
 
+// ---------- Quote form (Google Form) ----------
+const QUOTE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScD1XEBeZkAzw8eGSuMf6O2_K_hce1AIdRLiZXCssK3qjlkRw/viewform?embedded=true";
+const quoteLink = document.getElementById("quoteFormLink");
+if (quoteLink && QUOTE_FORM_URL) {
+  quoteLink.href = QUOTE_FORM_URL.replace(/[?&]embedded=true/, "").replace(/\?$/, "");
+  quoteLink.target = "_blank";
+  quoteLink.rel = "noopener";
+} else {
+  const note = document.getElementById("quoteFormNote");
+  if (note) note.hidden = true;
+  if (quoteLink) quoteLink.innerHTML = '<span lang="en">Call (718) 886-4980</span><span lang="zh">致电 (718) 886-4980</span>';
+}
+
 // ---------- Fade sections in as you scroll ----------
-const revealEls = document.querySelectorAll(".section-head, .card, .brands-block, .tech-card, .about-panel, .area-cards, .form-placeholder, .map-wrap");
+const revealEls = document.querySelectorAll(".section-head, .card, .brands-block, .tech-card, .about-panel, .area-cards, .quote-card, .map-wrap");
 if ("IntersectionObserver" in window) {
   revealEls.forEach(el => el.classList.add("reveal"));
   const io = new IntersectionObserver(entries => {
